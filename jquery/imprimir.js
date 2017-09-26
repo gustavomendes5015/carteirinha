@@ -9,7 +9,6 @@ window.onload = function(){
 	var data_inicio = localStorage.getItem('data_inicio');
 	var data_fim = localStorage.getItem('data_fim');
 	
-	var inicio = data_inicio.replace(///g, " "); 
 	$('.mae').text(mae);
 	$('.nome_crianca').text(crianca);
 	$('.crianca_sobrenome').text(sobrenome_crianca);
@@ -17,7 +16,7 @@ window.onload = function(){
 	$('.colegio').text(colegio);
 	$('.rg').text(rg);
 	$('.cpf').text(cpf);
-	$('.data_inicio').text(inicio);
+	$('.data_inicio').text(data_inicio);
 	$('.data_fim').text(data_fim);
 	//window.print();
 	//window.history.go(-1);
