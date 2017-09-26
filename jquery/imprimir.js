@@ -9,6 +9,7 @@ window.onload = function(){
 	var data_inicio = localStorage.getItem('data_inicio');
 	var data_fim = localStorage.getItem('data_fim');
 	data_inicio = data_inicio.replaceAll('/', '  ');
+	data_fim = data_fim.replaceAll('/', '  ');
 	$('.mae').text(mae);
 	$('.nome_crianca').text(crianca);
 	$('.crianca_sobrenome').text(sobrenome_crianca);
