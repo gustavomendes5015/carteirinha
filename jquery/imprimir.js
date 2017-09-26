@@ -19,8 +19,8 @@ window.onload = function(){
 	$('.cpf').text(cpf);
 	$('.data_inicio').text(data_inicio);
 	$('.data_fim').text(data_fim);
-	//window.print();
-	//window.history.go(-1);
+	window.print();
+	window.history.go(-1);
 }
 
 String.prototype.replaceAll = function (find, replace) {
