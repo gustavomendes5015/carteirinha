@@ -8,7 +8,7 @@ window.onload = function(){
 	var cpf = localStorage.getItem('cpf');
 	var data_inicio = localStorage.getItem('data_inicio');
 	var data_fim = localStorage.getItem('data_fim');
-	
+	data_inicio = data_inicio.replaceAll('/', '  ');
 	$('.mae').text(mae);
 	$('.nome_crianca').text(crianca);
 	$('.crianca_sobrenome').text(sobrenome_crianca);
@@ -21,3 +21,8 @@ window.onload = function(){
 	//window.print();
 	//window.history.go(-1);
 }
+
+String.prototype.replaceAll = function (find, replace) {
+    var str = this;
+    return str.replace(new RegExp(find.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'g'), replace);
+};
